@@ -1,0 +1,1482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>PantherBuy spreadsheet : guide mode, tailles et QC</title>
+  <meta name="description" content="Un guide indépendant PantherBuy spreadsheet en français : catégories mode, mesures, lecture des photos QC et points à vérifier avant de choisir un article.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#342446">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="PantherBuy spreadsheet : le carnet pour mieux choisir">
+  <meta property="og:description" content="Sneakers, vêtements et accessoires : des repères concrets pour comparer les mesures, les photos et le coût total.">
+  <meta property="og:image" content="https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_515_E07?wid=800&amp;hei=1000&amp;qlt=75&amp;fit=fit,1">
+  <meta property="og:image:alt" content="Silhouette Dior avec robe noire, col blanc et bijoux dorés, utilisée comme référence visuelle.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PantherBuy spreadsheet : le carnet mode en français">
+  <meta name="twitter:description" content="Choisir une catégorie, comparer les mesures et examiner les photos QC avant de décider.">
+  <meta name="twitter:image" content="https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_515_E07?wid=800&amp;hei=1000&amp;qlt=75&amp;fit=fit,1">
+  <link rel="preconnect" href="https://assets.christiandior.com" crossorigin>
+  <link rel="preload" as="image" href="https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_515_E07?wid=800&amp;hei=1000&amp;qlt=75&amp;fit=fit,1" fetchpriority="high">
+
+  <!--
+    Fichier : index.html.
+    Ajouter une canonical absolue et og:url après attribution de l'URL réelle
+    de cette page. Ne pas canonicaliser ce guide vers une autre page.
+
+    Note de recherche éditoriale, 4 novembre 2026.
+    Mot-clé tiré au sort : PantherBuy spreadsheet. Langue : français.
+
+    La page de résultats Google a été sollicitée mais n'était pas accessible.
+    Les dix sites suivants ont été repérés par les outils de recherche.
+    Leur présence parmi les dix premiers résultats Google n'a pas pu être vérifiée.
+    Les quatre premières entrées reposent sur des extraits indexés, leur ouverture
+    ayant échoué. Les six suivantes ont aussi été consultées directement.
+
+    Synthèse des titres et thèmes, sans reprise des promesses commerciales :
+    1. pantherbuysheets.com : catalogue, catégories, achat sur mobile, FAQ.
+    2. pantherbuy.org : spreadsheet, sélection de produits, questions d'utilisation.
+    3. pantherbuyspreadsheet.com : découvertes, catégories et marques.
+    4. qcradar.com/pantherbuy-spreadsheet : liens, QC, catalogue et commande.
+    5. kakobuyde.net/pantherbuy-spreadsheet : inspection, stockage, expédition.
+    6. bbd-buy.org/pantherbuy-spreadsheet : fiches et limites du contrôle visuel.
+    7. pantherbuy.co : sneakers, streetwear, mesures, recherche et transport.
+    8. pantherbuy.net : navigation thématique, guides et parcours d'expédition.
+    9. pantherbuy.delivery : catégories mode, découverte W2C et questions pratiques.
+    10. pantherbuylinks.com : vêtements, accessoires, marques et photographies.
+
+    Les tarifs, promotions, avis, volumes et conditions de service observés
+    ne sont pas repris.
+
+    Axes secondaires :
+    - PantherBuy spreadsheet France
+    - guide PantherBuy spreadsheet
+    - photos QC PantherBuy
+    - sélection mode PantherBuy
+
+    Intentions de longue traîne intégrées aux sujets :
+    comment utiliser un PantherBuy spreadsheet ; choisir un spreadsheet mode
+    en français ; comparer des liens produits ; vérifier une fiche vendeur ;
+    retrouver une référence de sneaker ; choisir une pointure en centimètres ;
+    comparer les tailles EU et US ; mesurer un sweat à plat ; choisir un t-shirt
+    selon les épaules ; vérifier la longueur d'une veste ; comparer un pantalon
+    et un short ; choisir un ensemble avec deux tailles ; mesurer son tour de
+    tête ; vérifier une casquette réglable ; comparer les dimensions d'un foulard ;
+    vérifier le fermoir d'un bijou ; lire les photos QC avant expédition ;
+    demander une photo de l'étiquette ; distinguer photo de catalogue et photo
+    réelle ; repérer une différence de coloris ; calculer le coût total d'un
+    achat ; comprendre le poids volumétrique ; vérifier les conditions de retour ;
+    conserver les références d'une commande.
+
+    Images : références Nike, Louis Vuitton et Dior.
+    Illustrations sans inventaire ni offre de vente associée.
+  -->
+
+  <style>
+    :root {
+      --paper: #f5f1e8;
+      --ink: #292330;
+      --plum: #342446;
+      --muted: #655d6b;
+      --line: #d9d0dd;
+      --lilac: #e6ddee;
+      --lime: #e3ecb1;
+      --white: #fffdf8;
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    a:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #7751a2;
+      outline-offset: 5px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #f1efed;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure {
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.12;
+      text-wrap: balance;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 5.5vw, 5.2rem);
+      letter-spacing: -.055em;
+      font-weight: 750;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 3.3vw, 2.8rem);
+      letter-spacing: -.035em;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      letter-spacing: -.02em;
+    }
+
+    p + p {
+      margin-top: 1rem;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .top {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 21px 0;
+    }
+
+    .brand {
+      font-size: 1.04rem;
+      letter-spacing: .12em;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .brand small {
+      display: block;
+      font-size: .63rem;
+      letter-spacing: .19em;
+      font-weight: 550;
+    }
+
+    .top-note {
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      min-height: 46px;
+      padding: 11px 21px;
+      border: 1px solid var(--plum);
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 650;
+      font-size: .88rem;
+    }
+
+    .pill-link:hover {
+      background: var(--lilac);
+    }
+
+    .categories {
+      padding: 23px 0 26px;
+    }
+
+    .eyebrow {
+      font-size: .72rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 750;
+    }
+
+    .category-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 13px;
+    }
+
+    .category-head p:last-child {
+      font-size: .8rem;
+      color: var(--muted);
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 7px;
+    }
+
+    .category-grid a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 71px;
+      padding: 10px 13px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 9px;
+      text-decoration: none;
+    }
+
+    .category-grid a:hover {
+      border-color: var(--plum);
+      background: var(--lilac);
+    }
+
+    .category-grid strong {
+      font-size: .82rem;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .category-grid span {
+      font-size: .72rem;
+      color: var(--muted);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--plum);
+      color: var(--white);
+    }
+
+    .hero-copy {
+      padding: clamp(25px, 4vw, 54px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero .eyebrow {
+      color: var(--lime);
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      display: block;
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #e4d9ed;
+      letter-spacing: -.045em;
+    }
+
+    .hero-intro {
+      margin-top: 25px;
+      color: #e3dce8;
+      max-width: 46ch;
+    }
+
+    .hero .pill-link {
+      background: var(--lime);
+      color: var(--plum);
+      border-color: var(--lime);
+      align-self: flex-start;
+      margin-top: 28px;
+    }
+
+    .hero .pill-link:hover {
+      background: #f2f6d8;
+    }
+
+    .hero figure {
+      position: relative;
+      min-width: 0;
+    }
+
+    .hero img {
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 4 / 5;
+      max-height: 700px;
+    }
+
+    .hero figcaption {
+      position: absolute;
+      inset: auto 14px 14px;
+      background: #fffdf8ed;
+      color: var(--ink);
+      padding: 9px 13px;
+      border-radius: 7px;
+      font-size: .7rem;
+      line-height: 1.5;
+    }
+
+    .answer {
+      display: grid;
+      grid-template-columns: .7fr 1.7fr;
+      gap: 32px;
+      padding: 29px 0;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 64px;
+    }
+
+    .answer h2 {
+      font-size: 1.35rem;
+    }
+
+    .answer p {
+      font-size: .95rem;
+      max-width: 78ch;
+    }
+
+    .section {
+      margin-bottom: 68px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 25px;
+      margin-bottom: 26px;
+    }
+
+    .section-head .eyebrow {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .section-head > p {
+      font-size: .88rem;
+      max-width: 35ch;
+      color: var(--muted);
+    }
+
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .visual {
+      min-width: 0;
+    }
+
+    .visual figure {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .visual img {
+      aspect-ratio: 1 / 1.15;
+      object-fit: contain;
+    }
+
+    .visual figcaption {
+      padding: 11px 14px;
+      font-size: .73rem;
+      line-height: 1.5;
+      border-top: 1px solid var(--line);
+    }
+
+    .visual h3 {
+      margin: 18px 0 9px;
+      font-size: 1.05rem;
+    }
+
+    .visual p {
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    .visual > a {
+      display: inline-block;
+      font-size: .82rem;
+      font-weight: 700;
+      margin-top: 11px;
+      padding-block: 5px;
+    }
+
+    .image-note {
+      font-size: .75rem;
+      color: var(--muted);
+      margin-top: 19px;
+      max-width: 105ch;
+    }
+
+    .dossier {
+      display: grid;
+      grid-template-columns: .65fr 1.35fr;
+      gap: 40px;
+    }
+
+    .dossier-title {
+      padding-top: 17px;
+      border-top: 3px solid var(--plum);
+    }
+
+    .dossier-title .eyebrow {
+      margin-bottom: 15px;
+      color: var(--muted);
+    }
+
+    .dossier-title p:last-child {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .articles {
+      display: grid;
+      gap: 18px;
+    }
+
+    .article {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 26px;
+    }
+
+    .article .number {
+      display: inline-block;
+      background: var(--lilac);
+      border-radius: 50px;
+      padding: 2px 11px;
+      font-size: .7rem;
+      font-weight: 750;
+      margin-bottom: 15px;
+    }
+
+    .article h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+
+    .article p,
+    .article li {
+      font-size: .92rem;
+    }
+
+    .article ul {
+      padding-left: 20px;
+      margin: 15px 0 0;
+    }
+
+    .article li + li {
+      margin-top: 9px;
+    }
+
+    .article a {
+      display: inline-block;
+      margin-top: 17px;
+      font-size: .85rem;
+      font-weight: 700;
+    }
+
+    .comparison {
+      background: var(--lilac);
+      border-radius: var(--radius);
+      padding: clamp(22px, 4vw, 42px);
+    }
+
+    .comparison h2 {
+      max-width: 21ch;
+    }
+
+    .comparison > p {
+      max-width: 75ch;
+      margin-top: 15px;
+      color: #51435d;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 25px;
+      border: 1px solid #bfb0cb;
+      border-radius: 9px;
+      background: var(--white);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .88rem;
+      text-align: left;
+    }
+
+    caption {
+      text-align: left;
+      padding: 14px 17px;
+      font-size: .78rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+    }
+
+    th,
+    td {
+      padding: 15px 17px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    thead th {
+      background: #f2edf5;
+      font-size: .72rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+
+    tbody th {
+      font-weight: 700;
+      min-width: 135px;
+    }
+
+    tbody tr:last-child > * {
+      border-bottom: 0;
+    }
+
+    .budget {
+      padding: 18px 20px;
+      background: var(--lime);
+      border-radius: 8px;
+      margin-top: 20px;
+      font-size: .88rem;
+    }
+
+    .faq-layout {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 45px;
+    }
+
+    .faq-intro .eyebrow {
+      margin-bottom: 13px;
+      color: var(--muted);
+    }
+
+    .faq-intro p:last-child {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    details {
+      border-bottom: 1px solid var(--line);
+      padding: 17px 0;
+    }
+
+    details:first-child {
+      border-top: 1px solid var(--line);
+    }
+
+    summary {
+      font-weight: 650;
+      cursor: pointer;
+      line-height: 1.5;
+      padding-right: 13px;
+    }
+
+    details p {
+      padding-top: 13px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .closing {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+      background: var(--plum);
+      border-radius: var(--radius);
+      padding: 30px 36px;
+      color: var(--white);
+    }
+
+    .closing h2 {
+      font-size: 1.6rem;
+    }
+
+    .closing p {
+      font-size: .88rem;
+      margin-top: 10px;
+      color: #e0d7e7;
+    }
+
+    .closing .pill-link {
+      flex-shrink: 0;
+      border-color: var(--lime);
+      color: var(--lime);
+    }
+
+    .closing .pill-link:hover {
+      color: var(--plum);
+      background: var(--lime);
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 25px 0 35px;
+      margin-top: 48px;
+      font-size: .75rem;
+      color: var(--muted);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 35px;
+    }
+
+    .footer-grid p + p {
+      margin-top: 8px;
+    }
+
+    @media (min-width: 1500px) {
+      .hero img {
+        max-height: 620px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .top-note {
+        display: none;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero {
+        grid-template-columns: 1.1fr .9fr;
+      }
+
+      .hero-copy {
+        padding: 28px;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+      }
+
+      .visual-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 18px;
+      }
+
+      .dossier {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .dossier-title p:last-child {
+        max-width: 70ch;
+      }
+
+      .faq-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .answer {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .wrap {
+        width: calc(100% - 28px);
+      }
+
+      .top-inner {
+        padding: 16px 0;
+      }
+
+      .top .pill-link {
+        font-size: .75rem;
+        padding: 8px 13px;
+        min-height: 42px;
+      }
+
+      .brand {
+        font-size: .9rem;
+      }
+
+      .brand small {
+        font-size: .57rem;
+      }
+
+      .category-head {
+        align-items: start;
+      }
+
+      .category-head p:last-child {
+        max-width: 15ch;
+        text-align: right;
+        font-size: .7rem;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .category-grid a {
+        min-height: 65px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        padding: 30px 25px;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.6rem, 12vw, 3.9rem);
+      }
+
+      .hero .eyebrow {
+        margin-bottom: 20px;
+      }
+
+      .hero-intro {
+        font-size: .94rem;
+      }
+
+      .hero figure {
+        max-height: 390px;
+        overflow: hidden;
+      }
+
+      .hero img {
+        aspect-ratio: 4 / 3;
+        object-position: center 25%;
+      }
+
+      .answer {
+        margin-bottom: 43px;
+        padding: 24px 0;
+      }
+
+      .section {
+        margin-bottom: 46px;
+      }
+
+      .section-head {
+        display: block;
+      }
+
+      .section-head > p {
+        margin-top: 13px;
+        max-width: 45ch;
+      }
+
+      .visual-grid {
+        gap: 24px 12px;
+      }
+
+      .visual figcaption {
+        padding: 9px;
+        font-size: .65rem;
+      }
+
+      .visual h3 {
+        font-size: 1rem;
+      }
+
+      .visual p {
+        font-size: .8rem;
+      }
+
+      .visual img {
+        aspect-ratio: 1;
+      }
+
+      .article {
+        padding: 21px;
+      }
+
+      .comparison {
+        padding: 23px 17px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        font-size: .8rem;
+      }
+
+      .closing {
+        display: block;
+        padding: 27px 23px;
+      }
+
+      .closing .pill-link {
+        margin-top: 20px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#page",
+        "name": "PantherBuy spreadsheet : guide mode, tailles et QC",
+        "inLanguage": "fr",
+        "description": "Un guide indépendant en français pour parcourir les catégories mode, comparer les mesures et lire les photos QC.",
+        "about": {
+          "@type": "Thing",
+          "name": "PantherBuy spreadsheet"
+        },
+        "mainEntity": {
+          "@id": "#guide"
+        },
+        "hasPart": [
+          {
+            "@id": "#articles"
+          },
+          {
+            "@id": "#faq"
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#guide",
+        "headline": "PantherBuy spreadsheet : le carnet pour mieux choisir",
+        "inLanguage": "fr",
+        "mainEntityOfPage": {
+          "@id": "#page"
+        },
+        "description": "Des repères de sélection pour les chaussures, les vêtements, les couvre-chefs et les bijoux, avec une méthode de comparaison des fiches et du budget.",
+        "articleSection": "Guide de sélection mode",
+        "hasPart": [
+          {
+            "@id": "#article-mesures"
+          },
+          {
+            "@id": "#article-qc"
+          },
+          {
+            "@id": "#article-budget"
+          }
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "#articles",
+        "name": "Trois articles pour préparer sa sélection",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "#article-mesures"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "#article-qc"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "#article-budget"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "#article-mesures",
+        "headline": "Tailles : partir d'une pièce que l'on porte déjà",
+        "inLanguage": "fr",
+        "description": "Comment choisir une pointure en centimètres, mesurer un sweat à plat et comparer les dimensions d'une tenue."
+      },
+      {
+        "@type": "Article",
+        "@id": "#article-qc",
+        "headline": "Photos QC PantherBuy : observer avant de conclure",
+        "inLanguage": "fr",
+        "description": "Distinguer une photo de catalogue d'une photo réelle, vérifier le coloris et demander une vue de l'étiquette."
+      },
+      {
+        "@type": "Article",
+        "@id": "#article-budget",
+        "headline": "Le vrai comparatif commence au coût total",
+        "inLanguage": "fr",
+        "description": "Comparer le prix de l'article, les frais, le transport, le poids volumétrique et les conditions de retour."
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#faq",
+        "inLanguage": "fr",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Comment utiliser un PantherBuy spreadsheet ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Commencez par une catégorie, ouvrez la fiche d'origine et notez la référence, la variante et les mesures. Comparez ensuite les photos disponibles et le coût total avant de décider. Cette page propose une méthode de sélection et renvoie vers les catégories CAFANS ; elle ne fournit pas de fichier Excel à télécharger."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ce guide PantherBuy spreadsheet France est-il officiel ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Il s'agit d'un guide éditorial indépendant en français. Il n'est affilié ni à PantherBuy ni aux marques illustrées. Les liens de découverte conduisent à CAFANS, sans connexion à un compte PantherBuy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Une photo QC prouve-t-elle l'authenticité ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Non. Une photo peut aider à examiner un détail visible, une étiquette ou une mesure ; elle ne certifie pas l'authenticité, la composition ou la durabilité. Pour une pièce de marque, demandez une provenance documentée et privilégiez un circuit de vente autorisé."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment comparer les tailles EU et US pour des sneakers ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Utilisez le tableau du modèle concerné et la longueur de pied en centimètres. Une conversion EU/US générique ne suffit pas : la coupe et le système de tailles peuvent varier selon la marque et le modèle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Les images correspondent-elles à des produits disponibles ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Les images servent uniquement de références visuelles. Elles ne confirment ni la disponibilité, ni le prix, ni la qualité d'un produit sur CAFANS. Vérifiez toujours la fiche effectivement consultée."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quel budget prévoir pour une sélection mode PantherBuy ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Il n'existe pas de budget universel. Additionnez le prix de l'article, les frais applicables, le transport et les éventuels montants d'importation. Demandez une estimation correspondant à votre destination et au colis prévu ; aucun tarif de service n'est garanti par ce guide."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/swkkf/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="brand" href="https://www.cafans.com" aria-label="CAFANS, découvrir le catalogue">
+        LE CARNET
+        <small>MODE · REPÈRES · CAFANS</small>
+      </a>
+      <span class="top-note">Édition française · Sélection &amp; méthode</span>
+      <a class="pill-link" href="https://www.cafans.com">
+        Explorer CAFANS <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <nav class="categories" aria-label="Catégories du catalogue CAFANS">
+      <div class="category-head">
+        <p class="eyebrow">Votre point de départ</p>
+        <p>10 catégories pour orienter la recherche</p>
+      </div>
+
+      <div class="category-grid">
+        <a href="https://cafans.com/category-911-Shoes.html">
+          <strong lang="en">Shoes</strong>
+          <span>Chaussures &amp; sneakers</span>
+        </a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">
+          <strong lang="en">Hoodies/Sweaters</strong>
+          <span>Sweats &amp; pulls</span>
+        </a>
+        <a href="https://cafans.com/category-913-T-Shirts.html">
+          <strong lang="en">T-Shirts</strong>
+          <span>Hauts du quotidien</span>
+        </a>
+        <a href="https://cafans.com/category-914-Jackets.html">
+          <strong lang="en">Jackets</strong>
+          <span>Vestes &amp; superpositions</span>
+        </a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html">
+          <strong lang="en">Pants/Shorts</strong>
+          <span>Pantalons &amp; shorts</span>
+        </a>
+        <a href="https://cafans.com/category-916-Headwear.html">
+          <strong lang="en">Headwear</strong>
+          <span>Casquettes &amp; couvre-chefs</span>
+        </a>
+        <a href="https://cafans.com/category-917-Sets.html">
+          <strong lang="en">Sets</strong>
+          <span>Ensembles coordonnés</span>
+        </a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html">
+          <strong lang="en">Underwear/underpants</strong>
+          <span>Sous-vêtements</span>
+        </a>
+        <a href="https://cafans.com/category-919-Jersey.html">
+          <strong lang="en">Jersey</strong>
+          <span>Maillots de sport</span>
+        </a>
+        <a href="https://cafans.com/category-920-Accessories.html">
+          <strong lang="en">Accessories</strong>
+          <span>Bijoux &amp; accessoires</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Le guide, pièce par pièce</p>
+        <h1 id="hero-title">
+          PantherBuy spreadsheet
+          <span>mieux regarder,<br>mieux choisir.</span>
+        </h1>
+        <p class="hero-intro">
+          Une silhouette vous plaît ? Commencez par les détails qui comptent :
+          la coupe, les mesures et les informations de la fiche. Ce carnet en
+          français vous aide à passer d'une idée de tenue à une sélection réfléchie.
+        </p>
+        <a class="pill-link" href="https://www.cafans.com">
+          Découvrir le catalogue <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <figure>
+        <img
+          src="https://assets.christiandior.com/is/image/diorprod/LOOK_F_25_3_LOOK_515_E07?wid=800&amp;hei=1000&amp;qlt=75&amp;fit=fit,1"
+          width="800"
+          height="1000"
+          alt="Silhouette Dior : robe noire à col blanc, bijoux dorés et boucles d'oreilles, sur fond clair."
+          loading="eager"
+          fetchpriority="high"
+          decoding="async">
+        <figcaption>
+          Référence visuelle Dior · Une silhouette pour observer les proportions,
+          sans offre de vente associée.
+        </figcaption>
+      </figure>
+    </section>
+
+    <aside class="answer" aria-labelledby="definition-title">
+      <h2 id="definition-title">Qu'est-ce qu'un<br>« spreadsheet » mode ?</h2>
+      <p>
+        Dans ce contexte, un <strong>PantherBuy spreadsheet</strong> désigne une
+        liste organisée de références et de liens produits, parfois accompagnés
+        de photos et de notes. C'est un point de départ pour comparer, pas une
+        preuve de qualité. Ce guide indépendant vous oriente vers CAFANS et
+        explique quoi vérifier sur chaque fiche.
+      </p>
+    </aside>
+
+    <section class="section" aria-labelledby="visual-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / Le regard</p>
+          <h2 id="visual-title">Quatre pièces.<br>Quatre façons de comparer.</h2>
+        </div>
+        <p>
+          Des images de référence pour apprendre à regarder une chaussure,
+          un vêtement, une casquette et un bijou.
+        </p>
+      </div>
+
+      <div class="visual-grid">
+        <article class="visual">
+          <figure>
+            <img
+              src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png"
+              width="535"
+              height="669"
+              loading="lazy"
+              decoding="async"
+              alt="Nike Air Force 1 '07 blanche, avec semelle blanche et Swoosh latéral.">
+            <figcaption>Nike · Air Force 1 '07 blanche</figcaption>
+          </figure>
+          <h3>La sneaker : la référence d'abord</h3>
+          <p>
+            Pour retrouver une référence de sneaker, relevez le code du modèle
+            et le coloris. Comparez ensuite le profil, le talon et la forme
+            de l'avant-pied.
+          </p>
+          <a href="https://cafans.com/category-911-Shoes.html">
+            Parcourir les chaussures ↗
+          </a>
+        </article>
+
+        <article class="visual">
+          <figure>
+            <img
+              src="https://si.geilicdn.com/open1623462477-1234478995-239e00000197911404fe0a8115c2-unadjust_800_800.png"
+              width="800"
+              height="800"
+              loading="lazy"
+              decoding="async"
+              alt="T-shirts blancs et bleu clair portant des motifs Louis Vuitton, présentés à plat.">
+            <figcaption>Louis Vuitton · Motifs &amp; volumes</figcaption>
+          </figure>
+          <h3>Le t-shirt : penser aux épaules</h3>
+          <p>
+            Choisir un t-shirt selon les épaules donne un repère plus utile
+            qu'une lettre S ou M. Vérifiez aussi la largeur de poitrine et
+            la longueur du dos.
+          </p>
+          <a href="https://cafans.com/category-913-T-Shirts.html">
+            Comparer les t-shirts ↗
+          </a>
+        </article>
+
+        <article class="visual">
+          <figure>
+            <img
+              src="https://static.nike.com/a/images/t_web_pdp_535_v2/f_auto%2Cu_9ddf04c7-2a9a-4d76-add1-d15af8f0263d%2Cc_scale%2Cfl_relative%2Cw_1.0%2Ch_1.0%2Cfl_layer_apply/a8b2f86e-0147-4913-ad56-5260bdd92bf4/U%2BNK%2BCLUB%2BCAP%2BU%2BCB%2BSWSH%2BL.png"
+              width="535"
+              height="669"
+              loading="lazy"
+              decoding="async"
+              alt="Casquette Nike Club noire à visière courbe et Swoosh discret sur le devant.">
+            <figcaption>Nike Club · Casquette noire</figcaption>
+          </figure>
+          <h3>La casquette : vérifier le volume</h3>
+          <p>
+            Mesurez votre tour de tête. Pour vérifier une casquette réglable,
+            regardez la plage de réglage, la fermeture arrière et la profondeur
+            de la calotte.
+          </p>
+          <a href="https://cafans.com/category-916-Headwear.html">
+            Voir les couvre-chefs ↗
+          </a>
+        </article>
+
+        <article class="visual">
+          <figure>
+            <img
+              src="https://assets.christiandior.com/is/image/diorprod/E1270TRICYD301_SBG_E06-2?wid=480&amp;hei=600&amp;qlt=75&amp;fit=fit,1"
+              width="480"
+              height="600"
+              loading="lazy"
+              decoding="async"
+              alt="Boucles d'oreilles Dior Tribales avec perles blanches, chaînes dorées, étoiles et pampilles CD.">
+            <figcaption>Dior Tribales · Détails du bijou</figcaption>
+          </figure>
+          <h3>Le bijou : examiner le fermoir</h3>
+          <p>
+            Vérifier le fermoir d'un bijou demande une vue rapprochée.
+            La longueur, le poids annoncé et la composition méritent aussi
+            une lecture attentive.
+          </p>
+          <a href="https://cafans.com/category-920-Accessories.html">
+            Explorer les accessoires ↗
+          </a>
+        </article>
+      </div>
+
+      <p class="image-note">
+        Ces visuels illustrent des formes et des détails ; ils ne constituent
+        pas une sélection de produits vérifiés ou disponibles. Les marques
+        citées restent la propriété de leurs titulaires. Aucune affiliation
+        officielle n'est revendiquée.
+      </p>
+    </section>
+
+    <section class="section dossier" aria-labelledby="dossier-title">
+      <div class="dossier-title">
+        <p class="eyebrow">02 / Le dossier pratique</p>
+        <h2 id="dossier-title">Moins d'hésitation.<br>Plus de repères.</h2>
+        <p>
+          Ce guide PantherBuy spreadsheet se lit en trois temps : la taille,
+          les images, puis le budget. Gardez vos notes pour comparer les mêmes
+          critères d'une fiche à l'autre.
+        </p>
+      </div>
+
+      <div class="articles">
+        <article class="article" id="article-mesures">
+          <span class="number">ARTICLE 01 · MESURES</span>
+          <h3>Tailles : partir d'une pièce que l'on porte déjà</h3>
+          <p>
+            Pour choisir une pointure en centimètres, mesurez vos deux pieds
+            et consultez le tableau du modèle. Pour un vêtement, prenez une
+            pièce confortable de votre garde-robe comme témoin. La bonne
+            comparaison porte sur des mesures prises de la même manière.
+          </p>
+          <ul>
+            <li>
+              <strong>Mesurer un sweat à plat :</strong> relevez la largeur
+              sous les aisselles, la longueur du dos et celle des manches,
+              sans étirer le tissu.
+            </li>
+            <li>
+              <strong>Vérifier la longueur d'une veste :</strong> regardez
+              où tombe l'ourlet et prévoyez la place nécessaire pour les
+              couches portées dessous.
+            </li>
+            <li>
+              <strong>Comparer un pantalon et un short :</strong> notez
+              le tour de taille, la hauteur de fourche et l'entrejambe ;
+              une taille élastique ne remplace pas ces repères.
+            </li>
+            <li>
+              <strong>Choisir un ensemble avec deux tailles :</strong>
+              vérifiez séparément le haut et le bas, ainsi que la possibilité
+              de sélectionner des tailles différentes.
+            </li>
+          </ul>
+          <a href="https://www.cafans.com">
+            Mettre ces repères en pratique sur CAFANS ↗
+          </a>
+        </article>
+
+        <article class="article" id="article-qc">
+          <span class="number">ARTICLE 02 · PHOTOGRAPHIES</span>
+          <h3>Photos QC PantherBuy : observer avant de conclure</h3>
+          <p>
+            Le terme QC désigne un contrôle qualité. Pour lire les photos QC
+            avant expédition, commencez par distinguer une photo de catalogue
+            d'une photo réelle de l'article concerné. Une image promotionnelle
+            montre une intention ; elle ne documente pas nécessairement
+            l'exemplaire reçu.
+          </p>
+          <p>
+            Comparez la vue générale et les détails. Pour repérer une différence
+            de coloris, tenez compte de l'éclairage et demandez une vue
+            complémentaire si nécessaire. Vérifiez les coutures, la symétrie
+            et les éventuelles marques visibles. Vous pouvez demander une
+            photo de l'étiquette ou des mesures lorsque ces éléments manquent.
+          </p>
+          <p>
+            Une photographie ne suffit pas à déterminer l'authenticité ou la
+            composition. Évitez de déduire une matière, une durabilité ou un
+            confort à partir du seul aspect visuel.
+          </p>
+          <a href="https://www.cafans.com">
+            Examiner les informations des fiches ↗
+          </a>
+        </article>
+
+        <article class="article" id="article-budget">
+          <span class="number">ARTICLE 03 · DÉCISION</span>
+          <h3>Le vrai comparatif commence au coût total</h3>
+          <p>
+            Calculer le coût total d'un achat demande davantage que le prix
+            affiché. Notez les frais applicables, les trajets de transport
+            et les éventuels montants d'importation. Comparez les liens
+            produits à variante et destination identiques ; sinon, les
+            écarts peuvent être trompeurs.
+          </p>
+          <p>
+            Pour comprendre le poids volumétrique, retenez qu'un colis
+            encombrant peut être facturé selon son volume plutôt que son
+            seul poids réel, suivant le transporteur. Demandez une estimation
+            adaptée au colis final. Vérifiez les conditions de retour avant
+            de valider, puis conservez les références de la commande et les
+            échanges utiles.
+          </p>
+          <a href="https://www.cafans.com">
+            Poursuivre la recherche sur CAFANS ↗
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section comparison" aria-labelledby="comparison-title">
+      <p class="eyebrow">03 / La fiche de comparaison</p>
+      <h2 id="comparison-title">
+        Ce qu'une bonne fiche doit vous permettre de vérifier.
+      </h2>
+      <p>
+        Avant de retenir une référence dans votre sélection mode PantherBuy,
+        cherchez des informations comparables. Une donnée absente est un
+        point à clarifier.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Repères de sélection par famille de produits</caption>
+          <thead>
+            <tr>
+              <th scope="col">Famille</th>
+              <th scope="col">À relever</th>
+              <th scope="col">À clarifier si absent</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Chaussures</th>
+              <td>Code du modèle, coloris, pointure et tableau en centimètres.</td>
+              <td>À quoi correspond la mesure : pied conseillé, semelle intérieure ou chaussure ?</td>
+            </tr>
+            <tr>
+              <th scope="row">Sweats &amp; pulls</th>
+              <td>Poitrine à plat, épaules, dos, manches et composition annoncée.</td>
+              <td>La coupe est-elle ample ou ajustée ? Le tissu est-il extensible ?</td>
+            </tr>
+            <tr>
+              <th scope="row">Maillots</th>
+              <td>Dimensions du modèle et détails de personnalisation.</td>
+              <td>Une personnalisation modifie-t-elle les possibilités de retour ?</td>
+            </tr>
+            <tr>
+              <th scope="row">Sous-vêtements</th>
+              <td>Tour de taille, composition et indications d'entretien.</td>
+              <td>Quelles conditions d'hygiène et de retour s'appliquent ?</td>
+            </tr>
+            <tr>
+              <th scope="row">Foulards</th>
+              <td>Longueur, largeur, finition des bords et matière annoncée.</td>
+              <td>Les dimensions du foulard correspondent-elles à l'usage prévu ?</td>
+            </tr>
+            <tr>
+              <th scope="row">Bijoux</th>
+              <td>Dimensions, composition, poids annoncé et vue du fermoir.</td>
+              <td>La matière de chaque partie est-elle précisée, y compris celle des éléments en contact avec la peau ?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="budget">
+        <strong>Le réflexe à garder :</strong> pour vérifier une fiche vendeur,
+        distinguez ce qui est documenté de ce qui est simplement suggéré par
+        les images. Conservez le lien d'origine, la date de consultation et
+        la variante choisie.
+      </div>
+    </section>
+
+    <section class="section faq-layout" aria-labelledby="faq-title">
+      <div class="faq-intro">
+        <p class="eyebrow">04 / Réponses directes</p>
+        <h2 id="faq-title">Les questions<br>qui font avancer.</h2>
+        <p>
+          Un PantherBuy spreadsheet France peut aider à organiser une
+          recherche. Les réponses ci-dessous précisent ce que vous pouvez
+          en attendre.
+        </p>
+      </div>
+
+      <div>
+        <details open>
+          <summary>Comment utiliser un PantherBuy spreadsheet ?</summary>
+          <p>Commencez par une catégorie, ouvrez la fiche d'origine et notez la référence, la variante et les mesures. Comparez ensuite les photos disponibles et le coût total avant de décider. Cette page propose une méthode de sélection et renvoie vers les catégories CAFANS ; elle ne fournit pas de fichier Excel à télécharger.</p>
+        </details>
+
+        <details>
+          <summary>Ce guide PantherBuy spreadsheet France est-il officiel ?</summary>
+          <p>Non. Il s'agit d'un guide éditorial indépendant en français. Il n'est affilié ni à PantherBuy ni aux marques illustrées. Les liens de découverte conduisent à CAFANS, sans connexion à un compte PantherBuy.</p>
+        </details>
+
+        <details>
+          <summary>Une photo QC prouve-t-elle l'authenticité ?</summary>
+          <p>Non. Une photo peut aider à examiner un détail visible, une étiquette ou une mesure ; elle ne certifie pas l'authenticité, la composition ou la durabilité. Pour une pièce de marque, demandez une provenance documentée et privilégiez un circuit de vente autorisé.</p>
+        </details>
+
+        <details>
+          <summary>Comment comparer les tailles EU et US pour des sneakers ?</summary>
+          <p>Utilisez le tableau du modèle concerné et la longueur de pied en centimètres. Une conversion EU/US générique ne suffit pas : la coupe et le système de tailles peuvent varier selon la marque et le modèle.</p>
+        </details>
+
+        <details>
+          <summary>Les images correspondent-elles à des produits disponibles ?</summary>
+          <p>Les images servent uniquement de références visuelles. Elles ne confirment ni la disponibilité, ni le prix, ni la qualité d'un produit sur CAFANS. Vérifiez toujours la fiche effectivement consultée.</p>
+        </details>
+
+        <details>
+          <summary>Quel budget prévoir pour une sélection mode PantherBuy ?</summary>
+          <p>Il n'existe pas de budget universel. Additionnez le prix de l'article, les frais applicables, le transport et les éventuels montants d'importation. Demandez une estimation correspondant à votre destination et au colis prévu ; aucun tarif de service n'est garanti par ce guide.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div>
+        <h2 id="closing-title">
+          Votre prochaine pièce commence par une bonne question.
+        </h2>
+        <p>
+          Choisissez une catégorie, puis comparez les détails qui comptent pour vous.
+        </p>
+      </div>
+      <a class="pill-link" href="https://www.cafans.com">
+        Ouvrir CAFANS <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div>
+        <strong>LE CARNET / CAFANS</strong>
+        <p>Guide mode indépendant · Français</p>
+        <p>
+          Édition du <time datetime="2026-11-04">4 novembre 2026</time>
+        </p>
+      </div>
+      <div>
+        <p>
+          Ce carnet est un contenu d'information, sans traitement de commande
+          sur cette page. Les catégories et les boutons de découverte
+          renvoient vers CAFANS.
+        </p>
+        <p>
+          Les noms PantherBuy, Nike, Louis Vuitton et Dior sont cités à des
+          fins d'identification. Leur présence n'implique aucun partenariat,
+          aucune certification et aucune garantie sur un article tiers.
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
